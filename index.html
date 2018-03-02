@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Budget mensuel</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+	<header>
+				<!--Header with title and images  -->
+		<div class="row">
+			<div class="col-sm-2"><img src="css/budget-logo.jpg" width="125" height="105" alt="budget" /></div>
+			<div class="col-sm-8"><h3>Votre budget mensuel en un clin d'oeil !</h3></div>
+			<div class="col-sm-2"><img src="css/pièces.jpeg" width="125" height="105" alt="pieces"/></div>
+		</div>
+		<br>
+	</header>
+	<br>
+	<div id="table">
+							<!-- Glossary with commands -->
+		<section class="container1">
+			<div class="row-col-md-12">
+				<div id="glossary">
+					<div class="col-md-3">
+					<input type="submit" id="weeklyresult" name="Résultat" value="Résultat"><br><br><br>
+					<input type="button" id="suppression" name="Suppression" value="Suppression"><br><br><br>
+					<input type="button" id="add" name="Ajout" value="Ajout"><br><br><br>
+					<input type="button" id="reset" name="RESET" value="RESET">	<br><br><br>
+					</div>
+				</div>
+			</div>
+		</section>	
+							<!-- Result and saving -->
+		<section class="container2">
+			<div class="row-col-md-12">
+				<div id="result">
+					<div class="col-md-4">
+						<h4>RESULTAT MENSUEL</h4>
+				  			<h5>Budget</h5>	
+							<span id="courant"></span>€<br><br><br>
+							<img src="css/courbe-fleche-croissance.jpg" width="250" height="105" alt="image"/><br><br><br>
+						<h4>EPARGNE</h4>		
+							<img src="css/épargne-tirelire.jpg" width="125" height="105" alt="image"/>
+								<label for="Livret">Livret</label>
+								<input type="number" id="booklet" name="number" placeholder="" required>
+								<label for="Provisions">Provisions</label>
+								<input type="number" id="provisions" name="number" placeholder="" required>
+
+							</form>		
+					</div>	
+				</div>	
+			</div>	
+		</section>
+					<!-- Financial revenu and current expenditure -->
+		<section class="container3">		
+			<div class="row-col-md-12">
+				<div id="receipts">
+					<div class="col-md-5">
+					<form>
+						<h4>RECETTES</h4>
+							<label for="salary">Salaires</label>
+							<input type="number" id="salary" name="number" placeholder="" required>
+							<label for="aids">Aides (allocations ...)</label>
+							<input type="number" id="aids" name="number" placeholder="" required>
+							<label for="annuities">Les rentes</label>
+							<input type="number" id="annuities" name="number" placeholder="" required>
+							<label for="other">Autres</label>
+							<input type="number" id="other" name="number" placeholder="" required>
+					</form>	
+				</div>			
+				<div class="spending">
+					<br><br>
+					<h4>DEPENSES</h4>
+			  		<h5>Dépenses fixes :</h5>
+					<form method="post">	
+						<label for="rents">Loyer et charges</label>
+						<input type="number" id="rents" name="number" placeholder="" required>
+						<label for="refund">Remboursement de crédits</label>
+						<input type="number" id="refund" name="number" placeholder="" required>
+						<label for="water">Eau/électricité/gaz</label>
+						<input type="number" id="water" name="number" placeholder="" required>
+						<label for="phone">Téléphone- internet</label>
+						<input type="number" id="phone" name="number" placeholder="" required>
+			   
+			   			<h5>Dépenses courantes :</h5>	
+						<label for="race">Courses</label>
+						<input type="number" id="race" name="number" placeholder="" required><br>
+						<label for="fuel">Essence/frais de transport</label>
+						<input type="number" id="fuel" name="number" placeholder="" required>
+						<label for="activity">Activités sportives</label>
+						<input type="number" id="activity" name="number" placeholder="" required>
+			   
+				   		<h5>Dépenses occasionnelles :</h5>	
+						<label for="spending">Sorties</label>
+						<input type="number" id="spending" name="number" placeholder="" required>
+					</form>
+				</div>	
+			</div>	
+		</section>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+			
+</html>

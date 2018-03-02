@@ -1,0 +1,53 @@
+body {
+	margin: auto;
+	font-family: Purisa;
+	padding: 1em;
+	justify-content: space-between;	
+}
+
+#weeklyresult {
+	width: 205px;
+	height: 65px;
+	border-radius: 50px;
+}
+
+#suppression{
+	width: 205px;
+	height: 65px;
+	border-radius: 50px;
+}
+
+#add {
+	width: 205px;
+	height: 65px;
+	border-radius: 50px;
+}
+
+#reset {
+	width: 205px;
+	height: 65px;
+	border-radius: 50px;
+}
+
+#table {
+	display: flex;
+	justify-content: space-between;
+}
+
+.receipts .spending {
+	width: 25px;
+	height: 85px; 
+}
+
+.container1 .container2 .container3 {
+	position: static;
+	padding: 2px 2em 0 2em;
+}
+
+.container3 {
+	margin: auto;
+}
+
+.courant {
+	border: 3px blue dashed;
+	
